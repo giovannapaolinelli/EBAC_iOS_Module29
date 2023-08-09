@@ -21,7 +21,7 @@
     "@wdio/mocha-framework": "^7.11.1",
     "@wdio/spec-reporter": "^7.10.1",
     "allure-commandline": "^2.13.8",
-    "appium": "^1.21.0",
+    "appium": "^2.0.0",
     "wdio-video-reporter": "^3.1.2"
   }
 }

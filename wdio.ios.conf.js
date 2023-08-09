@@ -5,12 +5,7 @@ const video = require('wdio-video-reporter');
 exports.config = {
     hostname: 'localhost',
     port: 4723,
-    path: '/wd/hub',
-    // user: "lojaebac_gBJk0x",
-    // key: "dQfHqx13fxpsVg1Ns1Yc",
 
-    // services: ['appium'],
-    // services: ['browserstack'],
     specs: [
         './test/specs/**/*.spec.js'
     ],
@@ -24,12 +19,14 @@ exports.config = {
     capabilities: [
         {
             "platformName": "iOS",
-            "deviceName": "iPhone 13",
-            "platformVersion": "15.2",
-            "orientation": "PORTRAIT",
-            "automationName": "XCUITest",
-            "app": join(process.cwd(), './app/ios/loja-ebac.app'),
-            'newCommandTimeout': 240
+            'appium:options': {
+                "deviceName": "iPhone 13",
+                "platformVersion": "16.2",
+                "automationName": 'XCUITest',
+                "orientation": "PORTRAIT",
+                "app": join(process.cwd(), './app/ios/loja-ebac.app'),
+                "newCommandTimeout": 240
+                }
           }
     ],
     waitforTimeout: 20000,
