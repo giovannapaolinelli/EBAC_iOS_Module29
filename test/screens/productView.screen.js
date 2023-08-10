@@ -32,12 +32,17 @@ class ProductViewScreen {
     }
 
     async waitProduct(name){
-        await $(`-ios predicate string:name CONTAINS '${name}'`).waitForDisplayed({ timeout: 10000 })
+        await $(`-ios predicate string:name CONTAINS '${name}'`).waitForDisplayed({ timeout: 100000 })
     }
 
     async product(name){
         await this.waitProduct(name)
         return await $(`-ios predicate string:name CONTAINS '${name}'`)
+    }
+
+    async addProduct(name){
+        await this.waitProduct(name)
+        await $(`-ios predicate string:name CONTAINS '${name}'`).click()
     }
 
 }

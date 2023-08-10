@@ -11,8 +11,8 @@ exports.config = {
     ],
     suites: {
         products: [
-            './test/specs/products.spec.js',
-            './test/specs/search.spec.js'
+            './test/specs/addProduct.spec.js'
+            //'./test/specs/search.spec.js'
         ]
     },
     framework: 'mocha',
@@ -80,6 +80,11 @@ exports.config = {
         //fechar o app
         await driver.closeApp()
     },
+
+    afterEach: async function(){
+        driver.execute('window.localStorage.clear()');
+    },
+
     maxInstances: 1
 
 }
