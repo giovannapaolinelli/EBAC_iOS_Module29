@@ -20,6 +20,7 @@
     "@wdio/spec-reporter": "^7.10.1",
     "allure-commandline": "^2.13.8",
     "appium": "^2.0.0",
+    "dotenv": "^14.3.2",
     "wdio-video-reporter": "^3.1.2"
   }
 }
