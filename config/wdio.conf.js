@@ -13,5 +13,4 @@ function getConfig(){
     }
 }
 
-
-exports.config = {}
+exports.config = getConfig()

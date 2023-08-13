@@ -1,4 +1,5 @@
 const { hooksConf } = require("./hooks.conf")
+const { reportsConf } = require("./reports.conf")
 
 let generalConf = {
     path: '/wd/hub',
