@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Add Product to Cart",
+    "children" : [ {
+      "name" : "shoud add product to cart",
+      "uid" : "83c34b18b629fd94",
+      "parentUid" : "442ba106412b20e66d269051c90c2066",
+      "status" : "passed",
+      "time" : {
+        "start" : 1691969647512,
+        "stop" : 1691969665402,
+        "duration" : 17890
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "iphone-14.0" ]
+    } ],
+    "uid" : "442ba106412b20e66d269051c90c2066"
+  } ],
+  "name" : "suites"
+}

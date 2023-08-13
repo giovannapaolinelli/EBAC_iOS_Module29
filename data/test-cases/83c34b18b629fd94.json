@@ -1,0 +1,74 @@
+{
+  "uid" : "83c34b18b629fd94",
+  "name" : "shoud add product to cart",
+  "fullName" : "Add Product to Cart.shoud add product to cart",
+  "historyId" : "a9b9b214501012c4129bc941865177ff",
+  "time" : {
+    "start" : 1691969647512,
+    "stop" : 1691969665402,
+    "duration" : 17890
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "671f3cbc7e4ca86e",
+      "name" : "Execution video",
+      "source" : "671f3cbc7e4ca86e.mp4",
+      "type" : "video/mp4",
+      "size" : 157
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Add Product to Cart"
+  }, {
+    "name" : "testClass",
+    "value" : "Add Product to Cart"
+  }, {
+    "name" : "testMethod",
+    "value" : "shoud add product to cart"
+  }, {
+    "name" : "package",
+    "value" : "Add Product to Cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "device",
+    "value" : "iphone-14.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "83c34b18b629fd94.json",
+  "parameterValues" : [ "iphone-14.0" ]
+}

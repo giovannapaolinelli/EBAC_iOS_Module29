@@ -1,0 +1,11 @@
+[ {
+  "uid" : "83c34b18b629fd94",
+  "name" : "shoud add product to cart",
+  "time" : {
+    "start" : 1691969647512,
+    "stop" : 1691969665402,
+    "duration" : 17890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
