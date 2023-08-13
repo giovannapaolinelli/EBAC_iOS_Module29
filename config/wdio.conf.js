@@ -1,3 +1,4 @@
+const { bsConf } = require('./bs.conf')
 const{localConf} = require('./local.conf')
 
 require('dotenv').config()
@@ -7,7 +8,7 @@ function getConfig(){
         case 'local': default:
             return localConf    
         case 'browserstack':
-            return {}
+            return bsConf
         case 'saucelabs':
             return {}
     }

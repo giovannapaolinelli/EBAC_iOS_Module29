@@ -6,13 +6,13 @@ exports.config = {
     // hostname: 'localhost',
     // port: 4723,
     path: '/wd/hub',
-    user: "lojaebac_gBJk0x",
-    key: "dQfHqx13fxpsVg1Ns1Yc",
+    user: "giovannashinhe_r0QjYc",
+    key: "gNoJ2z35YoYxKHnsTs1A",
 
     // services: ['appium'],
     services: ['browserstack'],
     specs: [
-        './test/specs/**/*.spec.js'
+        './test/specs/**/addProduct.spec.js'
     ],
     suites: {
         products: [
@@ -28,7 +28,7 @@ exports.config = {
         device: 'iPhone 12 Pro',
         os_version: "14",
         'browserstack.debug': true,
-        app: "bs://c373eea6d87b8b0da7ea7c0d59a8006275c8d12d"
+        app: "bs://ef5f9b15246b5bc24548f81a126cd85587448775"
     }
         // {
         //     "platformName": "iOS",
