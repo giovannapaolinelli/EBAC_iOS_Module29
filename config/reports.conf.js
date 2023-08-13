@@ -1,35 +1,10 @@
-const { join } = require('path')
+require('dotenv').config()
 
-exports.config = {
-    hostname: 'localhost',
-    port: 4723,
-    path: '/wd/hub',
-    // user: "lojaebac_gBJk0x",
-    // key: "dQfHqx13fxpsVg1Ns1Yc",
+const allure = require('allure-commandline')
+const video = require('wdio-video-reporter')
 
-    services: ['appium'],
-    // services: ['browserstack'],
-    framework: 'mocha',
-    capabilities: [{
-        "platformName": "Android",
-        "platformVersion": "8.1",
-        "deviceName": "ebac-qe",
-        "automationName": "UiAutomator2",
-        "app": join(process.cwd(), './app/android/loja-ebac.apk'),
-        "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity',
-        'newCommandTimeout': 240
+let reportsConf = process.env.REPORT == true ? {
 
-        // 'app' : 'bs://8450f0ceb7140a7d8772c1ccdfb9d6c496e9a702',
-        // 'device' : 'Samsung Galaxy Note 20',
-        // 'os_version' : '10.0',
-        // 'project' : 'Meu primeiro projeto em Device Farm',
-        // 'build' : '1',
-        // 'name': 'teste_login'
-    }],
-    waitforTimeout: 20000,
-    mochaOpts: {
-        timeout: 300000
-    },
     reporters: ['spec',
         ['allure', {
             outputDir: 'allure-results',
@@ -61,9 +36,7 @@ exports.config = {
             })
         })
     },
-    afterStep: function (test, scenario, { error, duration, passed }) {
-        if(error) {
-            driver.takeScreenshot()
-        }
-    }
-}
+
+} : {}
+
+module.exports = { reportsConf }
