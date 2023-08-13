@@ -4,7 +4,7 @@ require('dotenv').config()
 
 function getConfig(){
     switch (process.env.ENVIRONMENT) {
-        case local: default:
+        case 'local': default:
             return localConf    
         case 'browserstack':
             return {}
